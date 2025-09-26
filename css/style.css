@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    text-align: center;
+    margin: 0;
+    background-color: #8fb9a0;
+    color: #000000;
+    font-family: "Saira", sans-serif;
+
+}
+
+nav a{ 
+padding: 0.4rem;
+
+}
+a{
+    text-decoration: none;
+    font-size: 1.rem;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    transition: ease;
+    transition-duration: 0.5s;
+    background-color: #8fb9a0;
+    padding: 0px 4px;
+    border-radius: 4px;
+}
+header{
+    background-color: #115f45;
+    width: 100%;
+    padding: 15px 0;
+    height: 50%;
+}
+h1{
+   margin: 8px;
+    text-align: left;
+    padding-left: 12px;
+}
+h2{
+    margin: 8px;
+    text-align: left;
+    padding-left: 24px;
+}
+p{
+    font-size: 1..2rem;
+    margin: 4px;
+    text-align: justify;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+h3{
+    font-size: 1rem;
+}
+img{
+    width: 340px;
+    border-radius: 20px;
+}
+small{
+    color: rgb(71, 121, 222);
+}
+.ass p{
+    margin-right: 12px;
+    margin-left: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+iframe{
+    border-radius: 16px;
+}
+.cmp{
+    text-align: center;
+}
+.comp h3{
+    text-align: left;
+    padding-left: 12px;
+}
+iframe{
+    width: 340px;
+    border-radius: 20px;
+}
