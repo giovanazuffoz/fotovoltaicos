@@ -7,7 +7,7 @@
 body{
     text-align: center;
     margin: 0;
-    background-color: #8fb9a0;
+    background-color: rgb(143, 185, 160);
     color: #000000;
     font-family: "Saira", sans-serif;
 
@@ -81,4 +81,43 @@ iframe{
 iframe{
     width: 340px;
     border-radius: 20px;
+}
+.js h1{
+    text-align: center;
+}
+input{
+    color: white;   
+    font-size: 1.25rem;
+    text-align: center; 
+    background-color: black;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-top: 20px;
+
+}
+button{
+    color: white;   
+    font-size: 1.25rem;
+    text-align: center; 
+    background-color: black;
+    border-radius: 8px;
+    margin-top: 8px;
+    
+}
+#resposta{
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: inline-block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 20px;
+    background-color:  rgb(114, 186, 143);
+    margin-right:10px;
+    margin-left:10px;
+   
 }
