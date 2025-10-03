@@ -71,9 +71,8 @@ small{
 iframe{
     border-radius: 16px;
 }
-.cmp{
-    text-align: center;
-}
+
+
 .comp h3{
     text-align: left;
     padding-left: 12px;
@@ -102,6 +101,11 @@ button{
     background-color: black;
     border-radius: 8px;
     margin-top: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+
     
 }
 #resposta{
