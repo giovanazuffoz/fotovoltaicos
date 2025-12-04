@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/projetos.css">
+    <title>Projetos</title>
+</head>
+<body>
+    <header>
+<nav>
+    <a href="../index.html"><b>Principal</b></a>
+    <a href="./componentes.html"><b>Componentes</b></a>
+    <a href="./irradiacao.html"><b>Irradiação</b></a>
+    <a href="./modelos.html"><b>Modelos</b></a>
+    <a href="./logica.html"><b>Automação</b></a>
+    <a href="./empresa.html"><b>Empresas</b></a>
+    <a href="./projetos.html"><b>Projetos</b></a>
+</nav>
+    </header>
+    <main> 
+<h1>Projetos</h1>
+<P>Foram feitos projetos de eletrônica para o aprendizado de automação e TI,  sendo utilizado componentes físicos e a ferramenta online ThinkerCad</P>
+<h2>Níveis de iluminamento com leds </h2>
+<img src="../img/A1.png" alt=""><br><br>
+<img src="../img/B1.jpeg" alt=""><br><br>
+<video src="../img/D1.mp4" type="video/mp4" controls></video><br><br>
+<h3>Código C++</h3>
+<p><br>
+    int valor = 0;<br>
+    <br>
+    void setup()<br>
+    {<br>
+      pinMode(A0, INPUT);<br>
+      Serial.begin(9600);<br>
+      pinMode(2, OUTPUT);<br>
+      pinMode(3, OUTPUT);<br>
+      pinMode(4, OUTPUT);<br>
+    }<br>
+    <br>
+    void loop()<br>
+    {<br>
+      valor = analogRead(A0);<br>
+      Serial.println(valor);<br>
+      if (valor >= 300) {<br>
+        digitalWrite(2, HIGH);<br>
+        digitalWrite(3, LOW);<br>
+        digitalWrite(4, LOW);<br>
+      }<br>
+      if (valor >= 600) {<br>
+        digitalWrite(3, HIGH);<br>
+        digitalWrite(2, LOW);<br>
+        digitalWrite(4, LOW);<br>
+      }<br>
+      if (valor >= 900) {<br>
+        digitalWrite(4, HIGH);<br>
+        digitalWrite(3, LOW);<br>
+        digitalWrite(2, LOW);<br>
+      }<br>
+      delay(100);<br>
+    }<br>
+    </p>
+    <h2>Níveis de iluminamento com display de 7 segmentos</h2>
+    <img src="../img/A2.png" alt=""><br><br>
+    <img src="../img/B2.jpeg" alt=""><br><br>
+    <video src="../img/D2.mp4" type="video/mp4" controls></video><br><br>
+    <p><br>int contador = 0;<br>
+        int valor = 0;<br>
+        <br>
+        void setup()<br>
+        {<br>
+          Serial.begin(9600);<br>
+          pinMode(A0, INPUT);  <br>
+          pinMode(8, OUTPUT);<br>
+          pinMode(2, OUTPUT);<br>
+          pinMode(7, OUTPUT);<br>
+          pinMode(6, OUTPUT);<br>
+          pinMode(5, OUTPUT);<br>
+          pinMode(4, OUTPUT);<br>
+          pinMode(3, OUTPUT);<br>
+        }<br>
+        <br>
+        void loop()<br>
+        {<br>
+          valor = analogRead(A0);<br>
+          Serial.println(valor);<br>
+          if (analogRead(A0) < 99) {<br>
+            digitalWrite(8, LOW);<br>
+            digitalWrite(2, HIGH);<br>
+            digitalWrite(7, HIGH);<br>
+            digitalWrite(6, HIGH);<br>
+            digitalWrite(5, HIGH);<br>
+            digitalWrite(4, HIGH);<br>
+            digitalWrite(3, HIGH);<br>
+          }<br>
+          if (analogRead(A0) >= 100) {<br>
+            digitalWrite(8, LOW);<br>
+            digitalWrite(2, LOW);<br>
+            digitalWrite(7, LOW);<br>
+            digitalWrite(6, LOW);<br>
+            digitalWrite(5, LOW);<br>
+            digitalWrite(4, HIGH);<br>
+            digitalWrite(3, HIGH);<br>
+          }<br>
+          if (analogRead(A0) >= 200) {<br>
+            digitalWrite(8, HIGH);<br>
+            digitalWrite(2, HIGH);<br>
+            digitalWrite(7, LOW);<br>
+            digitalWrite(6, HIGH);<br>
+            digitalWrite(5, HIGH);<br>
+            digitalWrite(4, LOW);<br>
+            digitalWrite(3, HIGH);<br>
+          }<br>
+          if (analogRead(A0) >= 300) {<br>
+            digitalWrite(8, HIGH);<br>
+            digitalWrite(2, HIGH);<br>
+            digitalWrite(7, LOW);<br>
+            digitalWrite(6, LOW);<br>
+            digitalWrite(5, HIGH);<br>
+            digitalWrite(4, HIGH);<br>
+            digitalWrite(3, HIGH);<br>
+          }<br>
+          if (analogRead(A0) >= 400) {<br>
+            digitalWrite(8, HIGH);<br>
+            digitalWrite(2, LOW);<br>
+            digitalWrite(7, HIGH);<br>
+            digitalWrite(6, LOW);<br>
+            digitalWrite(5, LOW);<br>
+            digitalWrite(4, HIGH);<br>
+            digitalWrite(3, HIGH);<br>
+          }<br>
+          if (analogRead(A0) >= 500) {<br>
+            digitalWrite(8, HIGH);<br>
+            digitalWrite(2, HIGH);<br>
+            digitalWrite(7, HIGH);<br>
+            digitalWrite(6, LOW);<br>
+            digitalWrite(5, HIGH);<br>
+            digitalWrite(4, HIGH);<br>
+            digitalWrite(3, LOW);<br>
+          }<br>
+          if (analogRead(A0) >= 600) {<br>
+            digitalWrite(8, HIGH);<br>
+            digitalWrite(2, HIGH);<br>
+            digitalWrite(7, HIGH);<br>
+            digitalWrite(6, HIGH);<br>
+            digitalWrite(5, HIGH);<br>
+            digitalWrite(4, HIGH);<br>
+            digitalWrite(3, LOW);<br>
+          }<br>
+          if (analogRead(A0) >= 700) {<br>
+            digitalWrite(8, LOW);<br>
+            digitalWrite(2, HIGH);<br>
+            digitalWrite(7, LOW);<br>
+            digitalWrite(6, LOW);<br>
+            digitalWrite(5, LOW);<br>
+            digitalWrite(4, HIGH);<br>
+            digitalWrite(3, HIGH);<br>
+          }<br>
+          if (analogRead(A0) >= 800) {<br>
+            digitalWrite(8, HIGH);<br>
+            digitalWrite(2, HIGH);<br>
+            digitalWrite(7, HIGH);<br>
+            digitalWrite(6, HIGH);<br>
+            digitalWrite(5, HIGH);<br>
+            digitalWrite(4, HIGH);<br>
+            digitalWrite(3, HIGH);<br>
+          }<br>
+          if (analogRead(A0) >= 900) {<br>
+            digitalWrite(8, HIGH);<br>
+            digitalWrite(2, HIGH);<br>
+            digitalWrite(7, HIGH);<br>
+            digitalWrite(6, LOW);<br>
+            digitalWrite(5, LOW);<br>
+            digitalWrite(4, HIGH);<br>
+            digitalWrite(3, HIGH);<br>
+          }<br>
+          delay(10);<br>
+        }<br>
+        </p>
+    </main>
+    <footer>
+        By Giovana &copy; &trade;
+    </footer>
+</body>
+</html>
